@@ -26,6 +26,22 @@
             padding: 10px;
         }
 
+        .menu-flex-container {
+            display: flex;
+            background-color: rgb(121, 172, 223);
+            flex-direction: column;
+            justify-content: flex-end;
+            align-content: space-around;
+        }
+
+        .menu-flex-container>div {
+            color: darkslategray;
+            font-size: 20px;
+            margin: 5px;
+            background-color: burlywood;
+            padding: 10px;
+        }
+
         /* Giving grid area names */
         .item1 {
             grid-area: header;
@@ -81,7 +97,14 @@
                 <div>Contact</div>
             </div>
         </div>
-        <div class="item2">Menu</div>
+        <div class="item2">
+            <div class="item2 menu-flex-container">
+                <div>Cedcommerce</div>
+                <div>MakeWebBetter</div>
+                <div>BotMyWork</div>
+                <div>Magenative</div>
+            </div>
+        </div>
         <div class="item3">Main</div>
         <div class="item4">Right</div>
         <div class="item5">Footer</div>
